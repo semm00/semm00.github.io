@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chewy&family=Delicious+Handrawn&family=Flavors&family=Griffy&family=Lakki+Reddy&family=Solitreo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4F8492;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+    font-size: 36px;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+}
+
+body{
+    background-color: #FDD7CE;
+}
+
+main {
+    background-color: #FDD7CE;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20px;
+}
+
+nav a {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.imagems {
+    border-radius: 50%;
+    border: 8px solid #D4ADAC;
+    width: 400px;
+    margin-left: 30px;
+}
+
+div{
+    display: flex;
+}
+
+h1{
+    text-align: justify;
+    margin-right: 30px;
+    font-size: 48px;
+    color: #5A8A96;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+}
+
+.divs{
+    justify-content: space-around;
+}
+
+.diva2{
+   flex-direction: column;
+   max-width: 60%;
+   justify-content: center;
+}
+
+footer{
+    display: flex;
+    height: 150px;
+    background-color: #FDD7CE;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer nav {
+    gap: 0rem;
+    margin-left: 33px;
+    padding-top: 40px;
+    width: 45%;
+}
+
+footer div{
+    width: 45%;
+    padding-top: 40px;
+    justify-content: flex-start;
+}
+
+#imdiv {
+    width: 400px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
