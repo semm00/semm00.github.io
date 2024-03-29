@@ -372,7 +372,7 @@ a{
     }
 
     button:hover{
-        height: 30px;
+        height: 20px;
         color: #FDD7CE;
         background-color: #7DAAB6; 
     }
@@ -385,7 +385,7 @@ a{
 
     #imf:hover{
         opacity: 60%;
-        width: 18%;
+        width: 16%;
     }
 }
 
