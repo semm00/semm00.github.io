@@ -131,7 +131,6 @@ footer{
     height: max-content;
     background-color: #FDD7CE;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 20px;
     padding-inline: 40px;
@@ -243,8 +242,9 @@ button:hover{
         }
     } 
 
-    .duv {
-        width: 100vw;
+    main{
+        width: auto;
+        height: auto;
     }
 
     h1{
@@ -259,16 +259,64 @@ button:hover{
         overflow: hidden;
         animation: none;
     }
+
+    .divs{
+        width: 100%;
+        display: block;
+        padding: 40px 0;
+    }
+
+    .diva{
+        width: 65%;
+    }
+    
+
+    .diva1{
+        width: 100%;
+    }
+
+    .dragao{
+        width: 90%;
+    }
+
+    footer {
+        height: max-content;
+    }
+
+    button {
+        font-size: calc(1em + 2vw);
+    }
 }
 
-@media(max-width: 768px){
-}
-
-@media(max-width: 576px){
-}
 
 @media(max-width: 490px){
 
+    .diva{
+        width: 60%;
+    }
+    
+
+    .diva1{
+        width: 100%;
+    }
+
+    .dragao{
+        width: 80%;
+    }
+
+    footer {
+        height: max-content;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        font-size: calc(0.5em + 2vw);
+    }
 }
 
 
