@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Chewy&family=Delicious+Handrawn&family=Flavors&family=Griffy&family=Lakki+Reddy&family=Solitreo&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #FDD7CE;
+    max-width: 100vw;
+}
+
+header{
+    background-color: #4F8492;
+    position: relative;
+}
+
+h1{
+    word-spacing: 8px;
+    text-align: center;
+    font-size: 70px;
+    color: #5A8A96;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    border-right: 4px solid;
+    width: 48ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(48), 
+    blinking 0.5s infinite step-end alternate;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    background-color:#4F8492;
+    height: 15vh;
+    padding-inline: 30px;
+    padding-right:70px;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    margin-left: 45px;
+}
+
+.historia{
+    opacity: 70%;
+}
+
+header nav a:hover{
+    border-bottom: 2px solid #D4ADAC;
+}
+
+main {
+    background-color: #FDD7CE;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    max-width: 100%;
+}
+
+.divs{
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+}
+
+.diva {
+    width: 50%;
+}
+
+.flores{
+    width: 1400px;
+}
+
+.diva1{
+    width: 75%;
+}
+
+.dragao{
+    width: 1000px;
+    animation: float 3s ease-in-out;
+}
+
+nav a {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.duv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    display: flex;
+    height: max-content;
+    background-color: #FDD7CE;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-inline: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer div{
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+button{
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    border: 3px solid #7DAAB6 ;
+    border-radius: 25px;
+    color: #7DAAB6;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+    padding: 5px 40px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 3px;
+    background: #fff;
+    margin: 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    height: 50px;
+    color: #FDD7CE;
+    background-color: #7DAAB6; 
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+   50% {
+    border-color: transparent;
+   } 
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+}
+
+
+@media(max-width: 1071px){
+    body{
+        overflow-x: hidden;
+        overflow-block: hidden;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        width: 50vw;
+        height: 75vh;
+        background: #4F8492;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    } 
+
+    .duv {
+        width: 100vw;
+    }
+
+    h1{
+        word-spacing: 8px;
+        text-align: center;
+        font-size: calc(1em + 3vw);
+        color: #5A8A96;
+        font-family: "Delicious Handrawn", cursive;
+        font-weight: 400;
+        border-right: none;
+        white-space: normal;
+        overflow: hidden;
+        animation: none;
+    }
+}
+
+@media(max-width: 768px){
+}
+
+@media(max-width: 576px){
+}
+
+@media(max-width: 490px){
+
+}
+
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-7px, -8px);
+}
