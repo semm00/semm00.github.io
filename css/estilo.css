@@ -15,6 +15,7 @@ html, body {
 
 body{
     background-color: #FDD7CE;
+    max-width: 100vw;
 }
 
 header{
@@ -142,7 +143,7 @@ footer nav {
     flex-wrap: wrap;
 }
 
-footer div{
+.divf{
     width: 45%;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -177,6 +178,121 @@ a{
     border-radius: 10px;
     transition: 0.3s;
 }
+
+.historia{
+    opacity: 70%;
+}
+
+.h11{
+    word-spacing: 8px;
+    text-align: center;
+    font-size: 70px;
+    color: #5A8A96;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    border-right: 4px solid;
+    width: 48ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(48), 
+    blinking 0.5s infinite step-end alternate;
+}
+
+.main1 {
+    background-color: #FDD7CE;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    max-width: 100%;
+}
+
+.divs1{
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+}
+
+.diva0{
+    width: 50%;
+}
+
+.flores{
+    width: 1400px;
+}
+
+.diva00{
+    width: 75%;
+}
+
+.dragao{
+    width: 1000px;
+    animation: float 3s ease-in-out;
+}
+
+.duv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer1{
+    display: flex;
+    height: max-content;
+    background-color: #FDD7CE;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-inline: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.duv2{
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.button1{
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+    border: 3px solid #7DAAB6 ;
+    border-radius: 25px;
+    color: #7DAAB6;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+    padding: 5px 40px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+   50% {
+    border-color: transparent;
+   } 
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+}
+
 
 
 
@@ -326,6 +442,82 @@ a{
 
     .nav-list{
         height: 80vh;
+    }
+
+    .main1{
+        width: auto;
+        height: auto;
+    }
+
+    .h11{
+        word-spacing: 8px;
+        text-align: center;
+        font-size: calc(1em + 3vw);
+        color: #5A8A96;
+        font-family: "Delicious Handrawn", cursive;
+        font-weight: 400;
+        border-right: none;
+        white-space: normal;
+        overflow: hidden;
+        animation: none;
+    }
+
+    .divs1{
+        width: 100%;
+        display: block;
+        padding: 40px 0;
+    }
+
+    .diva0{
+        width: 65%;
+    }
+    
+
+    .diva00{
+        width: 100%;
+    }
+
+    .dragao{
+        width: 90%;
+    }
+
+    .footer1 {
+        height: max-content;
+    }
+
+    .button1 {
+        font-size: calc(1em + 2vw);
+    }
+}
+
+
+@media(max-width: 490px){
+
+    .diva0{
+        width: 60%;
+    }
+    
+
+    .diva00{
+        width: 100%;
+    }
+
+    .dragao{
+        width: 80%;
+    }
+
+    .footer1{
+        height: max-content;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button1 {
+        font-size: calc(0.5em + 2vw);
     }
 }
 
