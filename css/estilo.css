@@ -400,16 +400,11 @@ a{
         padding-top: 20px;
     }
 
-    .divf{
-        height: max-content;
-        width: 100%;
-    }
-
     footer nav img {
         width: 18%;
     }
 
-    footer div {
+    .divf {
       display: flex;
       width: 40%;
       text-align: center;
